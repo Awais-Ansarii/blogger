@@ -10,6 +10,7 @@ export async function GET(req: NextRequest) {
       req.headers.get("x-real-ip") ||
       "127.0.0.1";
 
+      console.log("ip=====", ip);
     // 2. Call IP Geo API (server-side)
     const res = await fetch(`https://ipapi.co/${ip}/json/`, {
       cache: "no-store",
