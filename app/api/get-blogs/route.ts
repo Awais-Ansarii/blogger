@@ -12,31 +12,31 @@ export async function GET(req: NextRequest) {
 
       console.log("ip=====", ip);
     // 2. Call IP Geo API (server-side)
-    const res = await fetch(`https://ipapi.co/${ip}/json/`, {
-      cache: "no-store",
-    });
-    console.log("resp detail:  ", res.status, res.statusText)
-    if (!res.ok) {
-      throw new Error("Failed to fetch geo data");
-    }
+    // const res = await fetch(`https://ipapi.co/${ip}/json/`, {
+    //   cache: "no-store",
+    // });
+    // console.log("resp detail:  ", res.status, res.statusText)
+    // if (!res.ok) {
+    //   throw new Error("Failed to fetch geo data");
+    // }
 
-    const geoData = await res.json();
+    // const geoData = await res.json();
     //   console.log("1111111111", geoData)
 
-    const data = {
-      ip: ip,
-      country: geoData.country_name,
-      countryCode: geoData.country_code,
-      city: geoData.city,
-      region: geoData.region,
-      latitude: geoData.latitude,
-      longitude: geoData.longitude,
-      timezone: geoData.timezone,
-      isp: geoData.org,
-      timestamp: new Date().toISOString(),
-    };
+    // const data = {
+    //   ip: ip,
+    //   country: geoData.country_name,
+    //   countryCode: geoData.country_code,
+    //   city: geoData.city,
+    //   region: geoData.region,
+    //   latitude: geoData.latitude,
+    //   longitude: geoData.longitude,
+    //   timezone: geoData.timezone,
+    //   isp: geoData.org,
+    //   timestamp: new Date().toISOString(),
+    // };
 
-      console.log(" data --->  ", data)
+    //   console.log(" data --->  ", data)
 
     
 
