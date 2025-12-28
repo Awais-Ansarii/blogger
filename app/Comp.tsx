@@ -1,6 +1,7 @@
 "use client";
 import { useState } from 'react';
 import { Menu, X, Mail, Github, Twitter, Linkedin } from 'lucide-react';
+import AIBlogPost from './AIBlogPost';
 
 const Comp = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,8 +30,8 @@ const Comp = () => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <a href="#home" className="text-2xl font-bold text-blue-600">
-                BlogSite
+              <a href="#home" className="text-3xl font-bold text-blue-600">
+                Techoholics
               </a>
             </div>
 
@@ -79,7 +80,7 @@ const Comp = () => {
       {/* Main Content */}
       <main className="flex-grow pt-16">
         {/* Hero Section */}
-        <section id="home" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
+        {/* <section id="home" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Welcome to Our Blog
@@ -94,15 +95,15 @@ const Comp = () => {
               Subscribe Now
             </a>
           </div>
-        </section>
+        </section> */}
 
         {/* Featured Posts Section */}
-        <section className="py-16 bg-gray-50">
+        <section id="home" className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+            {/* <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
               Featured Articles
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            </h2> */}
+            {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[1, 2, 3].map((post) => (
                 <div
                   key={post}
@@ -125,8 +126,9 @@ const Comp = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
+          <AIBlogPost/>
         </section>
 
         {/* Newsletter Section */}
@@ -213,7 +215,7 @@ const Comp = () => {
           </div>
 
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 BlogSite. All rights reserved.</p>
+            <p>&copy; 2025 BlogSite. All rights reserved.</p>
           </div>
         </div>
       </footer>
