@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Latest updates in AI & LLM",
-  description: "Get updated by trending tech & research",
+  title: "From Tutorial Hell to Real-World Dev: A Roadmap for CS/IT Students to Become Job-Ready 👩‍💻🚀",
+  description: "From Tutorial Hell to Real-World Dev: A Roadmap for CS/IT Students to Become Job-Ready 👩‍💻🚀",
 };
 
 export default function RootLayout({
